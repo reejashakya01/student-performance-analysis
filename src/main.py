@@ -1,3 +1,5 @@
+import csv 
+
 print("Student Performance Analysis System")
 print("-----------------------------------")
 print("Loading student data...")
@@ -62,3 +64,35 @@ for student in students:
         result = "Needs Improvement"
 
     print(student["name"], ":", result)
+    
+
+print("\nReading data from students.csv")
+print("------------------------------")
+
+with open("data/students.csv", "r") as file:
+    reader = csv.reader(file)
+
+    header = next(reader)
+    print("Columns:", header)
+
+    for row in reader:
+        name = row[0]
+        math = int(row[3])
+        science = int(row[4])
+        english = int(row[5])
+
+        total = math + science + english
+        average = total / 3
+        
+        if average >= 80:
+            result = "Excellent"
+        elif average >= 60:
+            result = "Good"
+        else:
+            result = "Needs Improvement"
+
+        print(name)
+        print("Total:", total)
+        print("Average:", average)
+        print("Performance:", result)
+        print()
