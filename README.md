@@ -18,3 +18,8 @@ Day 2 Progress:
 -Calculated total marks and average marks from the CSV data
 -Classified each student’s performance from the CSV data
 
+Day 3 Progress:
+-Calculated class averages for Math, Science, and English
+-Found the highest-performing student
+-Found the lowest-performing student
+-Counted students by performance category
