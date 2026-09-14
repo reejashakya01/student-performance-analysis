@@ -23,3 +23,10 @@ Day 3 Progress:
 -Found the highest-performing student
 -Found the lowest-performing student
 -Counted students by performance category
+
+Day 4 Progress
+-Started using Pandas
+-Loaded 'students.csv' into a DataFrame
+-Explored rows, columns, data types, and statistics
+-Checked for missing values
+-Calculated total and average marks with Pandas
