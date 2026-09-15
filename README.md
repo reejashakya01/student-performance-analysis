@@ -30,3 +30,9 @@ Day 4 Progress
 -Explored rows, columns, data types, and statistics
 -Checked for missing values
 -Calculated total and average marks with Pandas
+
+Day 5 Progress:
+-Compared average marks by gender
+-Calculated average marks by subject
+-Identified the best-performing subject
+-Created a student ranking by average marks

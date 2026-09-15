@@ -29,3 +29,31 @@ data["Average"] = data["Total"] / 3
 print("\nStudent Totals and Averages")
 print("---------------------------")
 print(data[["Name", "Total", "Average"]])
+
+print("\nAverage Marks by Gender")
+print("-----------------------")
+
+gender_averages = data.groupby("Gender")[["Math", "Science", "English", "Average"]].mean()
+
+print(gender_averages)
+
+print("\nAverage Marks by Subject")
+print("------------------------")
+
+subject_averages = data[["Math", "Science", "English"]].mean()
+print(subject_averages)
+
+best_subject = subject_averages.idxmax()
+best_subject_average = subject_averages.max()
+
+print("\nBest Performing Subject")
+print("-----------------------")
+print("Subject:", best_subject)
+print("Average Mark:", best_subject_average)
+
+print("\nStudent Ranking")
+print("---------------")
+
+ranking = data.sort_values(by="Average", ascending=False)
+
+print(ranking[["Name", "Average"]])
