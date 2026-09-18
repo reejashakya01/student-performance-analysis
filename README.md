@@ -24,7 +24,7 @@ Day 3 Progress:
 -Found the lowest-performing student
 -Counted students by performance category
 
-Day 4 Progress
+Day 4 Progress:
 -Started using Pandas
 -Loaded 'students.csv' into a DataFrame
 -Explored rows, columns, data types, and statistics
@@ -36,3 +36,9 @@ Day 5 Progress:
 -Calculated average marks by subject
 -Identified the best-performing subject
 -Created a student ranking by average marks
+
+Day 6 and Day 7 Progress:
+-Created a Matplotlib bar chart of student averages
+-Created a Seaborn chart comparing average marks by gender
+-Saved charts in the project
+-Finalized the project documentation
